@@ -68,6 +68,6 @@ button:focus-visible {
 } */
 
 .content {
-  position: relative; /* Ensures content is positioned in the document flow on top of the background */
+  position: relative; /* Ensures content is positioned in the document flow on top of the background */ 
   z-index: 1; /* Only needed if you're manipulating z-index elsewhere */
 }
