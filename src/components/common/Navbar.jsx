@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -12,25 +12,27 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import { alpha } from "@mui/system";
 import Button from "@mui/material/Button";
+import { Link, useLocation } from "react-router-dom";
 import { Container, CardMedia } from "@mui/material";
+import { navItems } from "../data/navlinks";
+import NavTracker from "../../utils/NavTracker";
 
 const drawerWidth = 240;
-const navItems = [
-  "Home",
-  "Services",
-  "Blog",
-  "Launchpad",
-  "About Us",
-  "Contact Us",
-];
 
-function DrawerAppBar(props) {
+const ResponsiveNavBar = (props) => {
   const { window } = props;
+  const [activeButton, setActiveButton] = React.useState(null);
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const location = useLocation();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    const cleanedLocation = location.pathname.replace("/", "");
+    setActiveButton(cleanedLocation);
+  }, [location]);
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -60,7 +62,6 @@ function DrawerAppBar(props) {
 
   return (
     <Container maxWidth="xl" sx={{ display: "flex" }}>
-      {/* <CssBaseline /> */}
       <AppBar
         component="nav"
         sx={{
@@ -93,24 +94,45 @@ function DrawerAppBar(props) {
 
           <Box
             sx={{
-              display: "flex",
+              display: { xs: "none", sm: "flex" },
               alignItems: "center",
-              width: "auto",
-              bgcolor: alpha("#fff", 0.1),
-              border: "1px solid #F2F2F21A",
-              boxShadow: "0px 10px 25px 0px #00000026",
+              bgcolor: alpha("#000", 0.05),
+              border: "0.1px solid #5c5c5c",
               borderRadius: "12px",
               gap: 3,
-              border: "1px",
-              height: "48px",
+              height: "40px",
             }}
           >
-            <Box sx={{ display: { xs: "none", sm: "block" }, px: 2 }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#000", px: 2 }}>
-                  {item}
-                </Button>
-              ))}
+            <Box sx={{ display: { xs: "none", sm: "block" }, px: 1 }}>
+              {navItems.map((item) => {
+                const cleanedItem = item
+                  .trim()
+                  .toLowerCase()
+                  .replace(/\s+/g, "-");
+                return (
+                  <Button
+                    key={cleanedItem}
+                    component={Link}
+                    to={`/${cleanedItem}`}
+                    sx={{
+                      color: "#fff",
+                      bgcolor:
+                        activeButton === cleanedItem
+                          ? alpha("#6f6f6f", 0.4)
+                          : "",
+                      px: 2,
+                      py: 0.4,
+                      textTransform: "capitalize",
+                    }}
+                  >
+                    <NavTracker
+                      activeButton={activeButton}
+                      cleanedItem={cleanedItem}
+                    />
+                    {item}
+                  </Button>
+                );
+              })}
             </Box>
           </Box>
         </Toolbar>
@@ -122,7 +144,7 @@ function DrawerAppBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },
@@ -137,6 +159,6 @@ function DrawerAppBar(props) {
       </nav>
     </Container>
   );
-}
+};
 
-export default DrawerAppBar;
+export default ResponsiveNavBar;
