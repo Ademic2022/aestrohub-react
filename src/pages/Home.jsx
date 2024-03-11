@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Box, Typography, CardMedia } from "@mui/material";
+import { Box } from "@mui/material";
 import Section1 from "../components/homeComponents/Section1";
 
 const Home = () => {
