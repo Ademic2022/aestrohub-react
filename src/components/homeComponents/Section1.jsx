@@ -4,12 +4,21 @@ import { Box, Typography, CardMedia, Button } from "@mui/material";
 const Section1 = () => {
   return (
     <React.Fragment>
-      <Box textAlign="center" width="65%" height="281px">
-        <Typography mb={3} variant="h2">
+      <Box textAlign="center" width={{ xs: "100%", md: "65%" }} height="281px">
+        <Typography
+          mb={3}
+          variant="h2"
+          sx={{ fontSize: { xs: "56px", md: "80px" } }}
+        >
           AestroHub
         </Typography>
 
-        <Typography gutterBottom mb={4} variant="body1" sx={{ px: "90px" }}>
+        <Typography
+          gutterBottom
+          mb={4}
+          variant="body1"
+          sx={{ px: { md: "90px" } }}
+        >
           We're not just an agency, we're a launchpad. A cross-functional,
           all-in-one service provider for everything you need to propel your
           Web3 project to the stars.
@@ -29,7 +38,7 @@ const Section1 = () => {
           <Typography variant="body2">Explore our station</Typography>
         </Button>
       </Box>
-      <Box>
+      <Box sx={{ display: { md: "block", xs: "none" } }}>
         <CardMedia
           component="img"
           image="/images/image1.jpeg"
@@ -39,6 +48,18 @@ const Section1 = () => {
             height: "631.95px",
             my: 0,
             transform: "rotate(180deg)",
+            objectFit: "cover",
+          }}
+        />
+      </Box>
+      {/* mobile display */}
+      <Box sx={{ display: { md: "none", xs: "block" } }}>
+        <CardMedia
+          component="img"
+          image="/images/image10.png"
+          alt="Logo"
+          sx={{
+            my: 5,
             objectFit: "cover",
           }}
         />
