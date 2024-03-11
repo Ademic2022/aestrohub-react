@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button, Typography, CardMedia, Grid, Chip } from "@mui/material";
+import Carousel from "react-multi-carousel";
 import Services from "./Services";
 import { services } from "../data/services";
 
@@ -38,18 +39,21 @@ const Section3 = () => {
           Our Services
         </Typography>
       </Box>
+      {/* desktop or larger devices */}
       <Box
         sx={{
-          display: "flex",
+          display: { xs: "none", md: "flex" },
           flexDirection: "column",
           gap: "20px",
           borderRadius: "40px",
         }}
       >
-        {services.map((service) => (
-          <Services service={service} />
+        {services.map((service, index) => (
+          <Services key={index} service={service} />
         ))}
       </Box>
+      {/* mobile devices */}
+      
     </React.Fragment>
   );
 };

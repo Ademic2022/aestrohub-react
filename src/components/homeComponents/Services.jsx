@@ -48,7 +48,7 @@ const Services = ({ service }) => {
                   width: 45,
                   mb: "20px",
                 }}
-                label={service.id}
+                label={6}
               />
               <Typography
                 mb={3}
@@ -88,7 +88,7 @@ const Services = ({ service }) => {
               </Button>
             </Box>
           </Grid>
-          <Grid direction="column" justifyContent="center" alignItems="center">
+          <Grid>
             <Box
               sx={{
                 display: "flex",
