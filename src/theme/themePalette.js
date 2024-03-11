@@ -83,6 +83,15 @@ export const getDesignTokens = (mode) => ({
       fontSize: "80px",
       lineHeight: 1.1,
     },
+    body: {
+      fontFamily: "'Space Grotesk', sans-serif",
+      fontSize: "28px",
+      fontWeight: 700,
+      lineHeight: "28px",
+      letterSpacing: "0em",
+      color: "#fff",
+      textAlign: "center",
+    },
     body1: {
       fontFamily: "Outfit",
       fontSize: "22px",
