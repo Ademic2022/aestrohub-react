@@ -1,21 +1,20 @@
 import React from "react";
 import { Box, Button, Typography, CardMedia, Grid, Chip } from "@mui/material";
 
-const Services = ({}) => {
+const Services = ({ service }) => {
   return (
     <Box
       sx={{
         display: "flex",
-        // flexDirection: "column",
         p: "25px",
-        height: "790px",
+        height: "650px",
         border: "1px solid #5c5c5c",
         borderRadius: "40px",
       }}
     >
       <Box
         sx={{
-          backgroundImage: `url("/images/image6.jpeg")`,
+          backgroundImage: `url(${service.bgImage})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -36,7 +35,6 @@ const Services = ({}) => {
             <Box
               sx={{
                 width: "520px",
-                // pl: "40px",
                 display: "flex",
                 flexDirection: "column",
               }}
@@ -50,19 +48,18 @@ const Services = ({}) => {
                   width: 45,
                   mb: "20px",
                 }}
-                label="01"
+                label={service.id}
               />
               <Typography
                 mb={3}
                 textAlign="left"
                 variant="h2"
-                // px={6}
                 sx={{
                   fontSize: { xs: "56px", md: "56px" },
                   fontWeight: 600,
                 }}
               >
-                Strategy & Consulting
+                {service.title}
               </Typography>
               <Typography
                 mb={3}
@@ -73,10 +70,7 @@ const Services = ({}) => {
                   fontWeight: 400,
                 }}
               >
-                Navigating the uncharted waters of Web3 can be daunting. You
-                need a clear roadmap to guide them through complex challenges,
-                capitalize on emerging opportunities, and build sustainable
-                success.
+                {service.description}
               </Typography>
               <Button
                 variant="outlined"
@@ -94,20 +88,15 @@ const Services = ({}) => {
               </Button>
             </Box>
           </Grid>
-          <Grid
-            item
-            direction="column"
-            justifyContent="center"
-            alignItems="center"
-            // xs={12}
-          >
+          <Grid direction="column" justifyContent="center" alignItems="center">
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                width: "489px",
-                height: "613px",
+                width: "459px",
+                height: "550px",
+                p: "25px",
                 bgcolor: "#fff",
                 borderRadius: "20px",
               }}
@@ -116,8 +105,8 @@ const Services = ({}) => {
                 component="img"
                 image="/images/image2.jpeg"
                 sx={{
-                  width: "437px",
-                  height: "562px",
+                  width: "407px",
+                  height: "100%",
                   borderRadius: "16px",
                 }}
                 alt="icon"

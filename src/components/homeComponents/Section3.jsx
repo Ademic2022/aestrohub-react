@@ -43,12 +43,11 @@ const Section3 = () => {
           display: "flex",
           flexDirection: "column",
           gap: "20px",
-          height: "4270px",
           borderRadius: "40px",
         }}
       >
-        {services.map((service)=> (
-          <Services />
+        {services.map((service) => (
+          <Services service={service} />
         ))}
       </Box>
     </React.Fragment>
