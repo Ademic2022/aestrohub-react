@@ -30,7 +30,7 @@ const NavTracker = ({ activeButton, cleanedItem }) => {
         display: activeButton === cleanedItem ? "block" : "none",
         position: "absolute",
         boxShadow: `0px 2px 25px 2px ${backgroundColor}`,
-        top: -6,
+        top: -8,
         height: "2px",
         width: "25px",
         bgcolor: { backgroundColor },

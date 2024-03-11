@@ -65,9 +65,10 @@ const ResponsiveNavBar = (props) => {
       <AppBar
         component="nav"
         sx={{
-          mt: "15px",
+          pt: "15px",
           px: { xs: "auto", md: 5 },
           backgroundColor: "transparent",
+          backdropFilter: "blur(7px)",
           "&.MuiToolbar-root": {
             backgroundColor: "transparent",
           },
@@ -100,7 +101,7 @@ const ResponsiveNavBar = (props) => {
               border: "0.1px solid #5c5c5c",
               borderRadius: "12px",
               gap: 3,
-              height: "40px",
+              height: "48px",
             }}
           >
             <Box sx={{ display: { xs: "none", sm: "block" }, px: 1 }}>
@@ -120,8 +121,7 @@ const ResponsiveNavBar = (props) => {
                         activeButton === cleanedItem
                           ? alpha("#6f6f6f", 0.4)
                           : "",
-                      px: 2,
-                      py: 0.4,
+                      px: 3,
                       textTransform: "capitalize",
                     }}
                   >

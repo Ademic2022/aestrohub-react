@@ -21,7 +21,7 @@ const App = () => {
       <Container component="main" maxWidth="xl" sx={{ p: 3 }}>
         <Box
           className="content"
-          style={{ color: "#fff", marginTop: "80px" }}
+          style={{ color: "#fff", marginTop: "80px", overflow:"hidden" }}
         >
           <Routes>
             <Route path="/" element={<Home />} />

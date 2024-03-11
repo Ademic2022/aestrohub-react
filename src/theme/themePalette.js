@@ -6,6 +6,7 @@ export const getDesignTokens = (mode) => ({
     primary: {
       main: blue[600],
     },
+
     mainColor: "#0b0f19",
     accent: {
       greenish: "#99d1a6",
@@ -72,6 +73,53 @@ export const getDesignTokens = (mode) => ({
       darkHover: "#7a0000",
       darkActive: "#5b0000",
       darker: "#470000",
+    },
+  },
+  typography: {
+    fontFamily: "'Space Grotesk', sans-serif",
+    h2: {
+      fontFamily: "'Space Grotesk', sans-serif",
+      fontWeight: 700,
+      fontSize: "80px",
+      lineHeight: 1.1,
+    },
+    body1: {
+      fontFamily: "Outfit",
+      fontSize: "22px",
+      fontWeight: 500,
+      lineHeight: "28px",
+      letterSpacing: "0em",
+      color: "#9898A8",
+      textAlign: "center",
+    },
+    body2: {
+      fontFamily: "Outfit",
+      fontSize: "18px",
+      fontWeight: 500,
+      lineHeight: "28px",
+      letterSpacing: "0em",
+      color: "#fff",
+      textAlign: "center",
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        outlined: {
+          width: "233px",
+          background: "#18181F99",
+          border: "1px solid #5c5c5c",
+          borderRadius: "24px",
+          marginY: 2,
+          height: "47px",
+          textTransform: "capitalize",
+          "&:hover": {
+            backgroundImage: "linear-gradient(to right, #007bff, #22c38f)",
+            color: "#fff",
+            border: "1px solid #fff",
+          },
+        },
+      },
     },
   },
 });
