@@ -48,38 +48,48 @@ const Section2 = () => {
       <Box
         display={{ xs: "flex", md: "none" }}
         alignItems="center"
-        flexDirection="column"
-        gap={4}
-        p={2}
-        width="341px"
-        sx={{
-          height: "320px",
-          bgcolor: "#0EAD69",
-          borderRadius: "24px",
-          overflowY: "auto",
-        }}
+        justifyContent="center"
       >
-        {companies.map((company) => (
-          <Box
-            key={company.id}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              width: "239.99px",
-              height: "68.58px",
-            }}
-          >
-            <CardMedia
-              component="img"
-              image={company.logo}
-              alt="Logo"
-              sx={{ width: "68.58px", height: "68.58px", objectFit: "contain" }}
-            />
-            <Typography variant="body" sx={{ fontSize: "20.5px", ml: 2 }}>
-              {company.name}
-            </Typography>
-          </Box>
-        ))}
+        <Box
+          display={{ xs: "flex", md: "none" }}
+          alignItems="center"
+          flexDirection="column"
+          gap={4}
+          py={2}
+          width="390px"
+          sx={{
+            height: "320px",
+            bgcolor: "#0EAD69",
+            borderRadius: "24px",
+            overflowY: "auto",
+          }}
+        >
+          {companies.map((company) => (
+            <Box
+              key={company.id}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                width: "90%",
+                height: "68.58px",
+              }}
+            >
+              <CardMedia
+                component="img"
+                image={company.logo}
+                alt="Logo"
+                sx={{
+                  width: "68.58px",
+                  height: "68.58px",
+                  objectFit: "contain",
+                }}
+              />
+              <Typography variant="body" sx={{ fontSize: "20.5px", ml: 2 }}>
+                {company.name}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
       </Box>
     </React.Fragment>
   );

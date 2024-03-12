@@ -1,8 +1,11 @@
 import React from "react";
-import { Box, Button, Typography, CardMedia, Grid, Chip } from "@mui/material";
+import { Box, Typography, CardMedia, Chip } from "@mui/material";
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Services from "./Services";
 import { services } from "../data/services";
+import ServiceCard from "./ServiceCard";
+import { responsive } from "../data/CarouselResponsive";
 
 const Section3 = () => {
   return (
@@ -53,7 +56,25 @@ const Section3 = () => {
         ))}
       </Box>
       {/* mobile devices */}
-      
+      <Box
+        sx={{
+          display: { xs: "block", md: "none" },
+        }}
+      >
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          showDots={true}
+          autoPlay={true}
+          autoPlaySpeed={5000}
+        >
+          {services.map((service) => (
+            <div key={service.id}>
+              <ServiceCard data={service} />
+            </div>
+          ))}
+        </Carousel>
+      </Box>
     </React.Fragment>
   );
 };

@@ -7,7 +7,7 @@ import Section3 from "../components/homeComponents/Section3";
 const Home = () => {
   return (
     <Box
-      display="flex"
+      display={{ md: "flex", xs: "block" }}
       justifyContent="center"
       alignItems="center"
       flexDirection="column"
