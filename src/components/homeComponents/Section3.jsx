@@ -10,7 +10,7 @@ import { responsive } from "../data/CarouselResponsive";
 const Section3 = () => {
   return (
     <React.Fragment>
-      <Box textAlign="center" width={{ xs: "100%", md: "65%" }} mt={15} mb={5}>
+      <Box textAlign="center" width={{ xs: "100%", md: "65%" }} mt={15} mb={5} >
         <Chip
           sx={{
             bgcolor: "#fff",
@@ -37,7 +37,7 @@ const Section3 = () => {
         <Typography
           mb={3}
           variant="h2"
-          sx={{ fontSize: { xs: "56px", md: "56px" } }}
+          sx={{ fontSize: { xs: "32px", md: "56px" } }}
         >
           Our Services
         </Typography>
