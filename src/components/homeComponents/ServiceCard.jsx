@@ -18,7 +18,7 @@ const ServiceCard = ({ data }) => {
         flexDirection: { xs: "column", md: "row" },
         marginBottom: "20px",
         height: { xs: "auto", md: "330px" },
-        borderRadius:"16px",
+        borderRadius: "16px",
       }}
     >
       <CardContent>
@@ -46,7 +46,7 @@ const ServiceCard = ({ data }) => {
             sx={{
               fontSize: "32px",
               fontWeight: 600,
-              color: "#fff"
+              color: "#fff",
             }}
           >
             {data.title}

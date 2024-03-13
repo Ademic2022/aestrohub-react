@@ -13,14 +13,14 @@ import { alpha } from "@mui/system";
 import { FaUserTie } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
-import { services } from "../data/services";
+import { articles } from "../data/articles";
 import { responsive } from "../data/CarouselResponsive";
 
 const Section6 = () => {
   return (
     <React.Fragment>
       <Box
-        width={{ xs: "100%", md: "85%" }}
+        width={{ xs: "100%", md: "65%" }}
         mt={15}
         sx={{ margin: "100px auto 5px", textAlign: "center" }}
         mb={5}
@@ -51,7 +51,7 @@ const Section6 = () => {
         <Typography
           mb={3}
           variant="h2"
-          sx={{ fontSize: { xs: "32px", md: "56px", textAlign: "left" } }}
+          sx={{ fontSize: { xs: "32px", md: "56px" } }}
         >
           Read our latest Articles
         </Typography>
@@ -60,32 +60,36 @@ const Section6 = () => {
         <Carousel
           responsive={responsive}
           infinite={true}
-          showDots={true}
           autoPlay={true}
           autoPlaySpeed={5000}
         >
-          {services.map((service) => (
-            <Card
-              sx={{
-                m: 1,
-                p: 1,
-                bgcolor: alpha("#fff", 0.1),
-                border: "1px solid #5c5c5c",
-              }}
-            >
-              <CardMedia
-                sx={{ height: "318px" }}
-                image="/images/image3.jpeg"
-                title="green iguana"
-              />
-              <CardContent>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                  }}
-                >
+          {articles.map((article) => {
+            // Split the summary into words
+            const words = article.summary.split(" ");
+            // Check if the number of words exceeds 10
+            const truncatedSummary =
+              words.length > 11
+                ? `${words.slice(0, 11).join(" ")}...`
+                : article.summary;
+
+            return (
+              <Card
+                key={article.id}
+                sx={{
+                  m: 1,
+                  p: 1,
+                  bgcolor: alpha("#fff", 0.1),
+                  border: "1px solid #5c5c5c",
+                  borderRadius: "16px",
+                  maxHeight: "580px",
+                }}
+              >
+                <CardMedia
+                  sx={{ height: "318px", borderRadius: "16px" }}
+                  image={article.img}
+                  title="Article Image"
+                />
+                <CardContent>
                   <Box
                     sx={{
                       display: "flex",
@@ -93,41 +97,68 @@ const Section6 = () => {
                       justifyContent: "space-between",
                     }}
                   >
-                    <FaUserTie />
-                    <Typography pl={1}>Esther Adams</Typography>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <FaUserTie />
+                      <Typography
+                        pl={1}
+                        sx={{ fontSize: { xs: "18px", md: "23px" } }}
+                      >
+                        {article.author}
+                      </Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <FaCalendarAlt />
+                      <Typography pl={1} sx={{ fontSize: { xs: 15, md: 20 } }}>
+                        {article.created_at}
+                      </Typography>
+                    </Box>
                   </Box>
-                  <Box
+                  <Typography
+                    pt={3}
+                    textAlign="left"
+                    gutterBottom
+                    variant="body"
+                    component="div"
+                    sx={{ fontSize: { xs: 18, md: 22 } }}
+                  >
+                    {article.headline}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    textAlign="left"
+                    color="#D0D0D0"
+                    sx={{ fontSize: { xs: 14, md: 18 } }}
+                  >
+                    {truncatedSummary}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button
+                    variant="filled"
                     sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
+                      bgcolor: "#0EAD69",
+                      borderRadius: "16px",
+                      color: "#fff",
                     }}
                   >
-                    <FaCalendarAlt />
-                    <Typography pl={1}>12 sep 2021</Typography>
-                  </Box>
-                </Box>
-                <Typography
-                  pt={3}
-                  textAlign="left"
-                  gutterBottom
-                  variant="body"
-                  component="div"
-                >
-                  Centralized Exchanges
-                </Typography>
-                <Typography variant="body2" textAlign="left" color="#D0D0D0">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button variant="filled" color="#0EAD69">
-                  Read More
-                </Button>
-              </CardActions>
-            </Card>
-          ))}
+                    Read More
+                  </Button>
+                </CardActions>
+              </Card>
+            );
+          })}
         </Carousel>
       </Box>
     </React.Fragment>
