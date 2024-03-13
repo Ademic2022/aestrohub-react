@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
+import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
@@ -8,7 +9,6 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import { AiOutlineClose } from "react-icons/ai";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Toolbar from "@mui/material/Toolbar";
@@ -18,6 +18,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Container, CardMedia } from "@mui/material";
 import { navItems } from "../data/navlinks";
 import NavTracker from "../../utils/NavTracker";
+import { listVariants, itemVariants } from "../data/motionProps/navbar";
 
 const drawerWidth = 240;
 
@@ -47,9 +48,20 @@ const ResponsiveNavBar = (props) => {
         />
       </Box>
       <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+
+      <List
+        component={motion.ul}
+        initial="closed"
+        animate={mobileOpen ? "open" : "closed"}
+        variants={listVariants}
+      >
+        {navItems.map((item, index) => (
+          <ListItem
+            key={item}
+            disablePadding
+            component={motion.li}
+            variants={itemVariants}
+          >
             <ListItemButton
               sx={{
                 textAlign: "center",
