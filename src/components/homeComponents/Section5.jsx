@@ -6,7 +6,12 @@ import { projects } from "../data/projects";
 const Section5 = () => {
   return (
     <React.Fragment>
-      <Box textAlign="center" width={{ xs: "100%", md: "65%", margin: "0 auto", textAlign: "center" }} mt={15} mb={5}>
+      <Box
+        textAlign="center"
+        width={{ xs: "100%", md: "65%", margin: "0 auto", textAlign: "center" }}
+        mt={15}
+        mb={5}
+      >
         <Chip
           sx={{
             bgcolor: "#fff",
@@ -38,7 +43,7 @@ const Section5 = () => {
           Our Range of Projects
         </Typography>
       </Box>
-      <Box width={{ md: 1280 }} sx={{margin: "0 auto", textAlign: "center"}}>
+      <Box width={{ md: 1280 }} sx={{ margin: "0 auto", textAlign: "center" }}>
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}
@@ -55,6 +60,7 @@ const Section5 = () => {
                   bgcolor: alpha("#fff", 0.1),
                   height: "412px",
                   borderRadius: "20px",
+                  border: "1px solid #5c5c5c",
                 }}
               >
                 <Box

@@ -5,7 +5,8 @@ const Section4 = () => {
   return (
     <React.Fragment>
       <Box
-        width={{ md: 1280 }} sx={{margin: "0 auto", textAlign: "center"}}
+        width={{ md: 1280 }}
+        sx={{ margin: "100px auto 5px", textAlign: "center" }}
       >
         <Chip
           sx={{
@@ -38,7 +39,7 @@ const Section4 = () => {
           Our Offerings
         </Typography>
       </Box>
-      <Box width={{ md: 1280 }}>
+      <Box width={{ md: 1280 }} sx={{ margin: "0 auto", textAlign: "center" }}>
         <Grid container justifyContent="center" alignItems="center">
           <Grid
             item

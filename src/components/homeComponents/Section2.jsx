@@ -6,7 +6,12 @@ import Marquee from "react-marquee-slider";
 const Section2 = () => {
   return (
     <React.Fragment>
-      <Box textAlign="center" width={{ xs: "100%", md: "65%" }} mb={6}>
+      <Box
+        textAlign="center"
+        width={{ xs: "100%", md: "65%" }}
+        mb={6}
+        sx={{ margin: "40px auto", textAlign: "center" }}
+      >
         <Typography variant="h2" sx={{ fontSize: { xs: "32px", md: "56px" } }}>
           Companies in our Space
         </Typography>
@@ -22,6 +27,8 @@ const Section2 = () => {
           bgcolor: "#0EAD69",
           borderRadius: "24px",
           overflowX: "auto",
+          margin: "0 auto",
+          textAlign: "center",
         }}
       >
         <Marquee velocity={12} direction="rtl">

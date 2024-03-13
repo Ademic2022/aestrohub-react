@@ -6,25 +6,23 @@ import {
   CardActions,
   CardMedia,
   Chip,
-  Grid,
   CardContent,
   Card,
 } from "@mui/material";
 import { alpha } from "@mui/system";
-
+import { FaUserTie } from "react-icons/fa6";
+import { FaCalendarAlt } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
-import ServiceCard from "./ServiceCard";
 import { services } from "../data/services";
-
-import { projects } from "../data/projects";
 import { responsive } from "../data/CarouselResponsive";
 
 const Section6 = () => {
   return (
     <React.Fragment>
       <Box
-        width={{ xs: "100%", md: "65%", margin: "0 auto", textAlign: "center" }}
+        width={{ xs: "100%", md: "85%" }}
         mt={15}
+        sx={{ margin: "100px auto 5px", textAlign: "center" }}
         mb={5}
       >
         <Chip
@@ -67,24 +65,66 @@ const Section6 = () => {
           autoPlaySpeed={5000}
         >
           {services.map((service) => (
-            <Card>
+            <Card
+              sx={{
+                m: 1,
+                p: 1,
+                bgcolor: alpha("#fff", 0.1),
+                border: "1px solid #5c5c5c",
+              }}
+            >
               <CardMedia
-                sx={{ height: 140 }}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                sx={{ height: "318px" }}
+                image="/images/image3.jpeg"
                 title="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <FaUserTie />
+                    <Typography pl={1}>Esther Adams</Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <FaCalendarAlt />
+                    <Typography pl={1}>12 sep 2021</Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  pt={3}
+                  textAlign="left"
+                  gutterBottom
+                  variant="body"
+                  component="div"
+                >
+                  Centralized Exchanges
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" textAlign="left" color="#D0D0D0">
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button variant="filled" color="#0EAD69">
+                  Read More
+                </Button>
               </CardActions>
             </Card>
           ))}

@@ -10,21 +10,14 @@ import Section6 from "../components/homeComponents/Section6";
 const Home = () => {
   return (
     <React.Fragment>
-    <Box
-      display={{ md: "flex", xs: "block" }}
-      justifyContent="center"
-      alignItems="center"
-      flexDirection="column"
-      height="fit-content"
-      mt={10}
-    >
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-    </Box>
-      <Section6 />
+      <Box mt={10}>
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Section5 />
+        <Section6 />
+      </Box>
     </React.Fragment>
   );
 };

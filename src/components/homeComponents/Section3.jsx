@@ -10,7 +10,11 @@ import { responsive } from "../data/CarouselResponsive";
 const Section3 = () => {
   return (
     <React.Fragment>
-      <Box textAlign="center" width={{ xs: "100%", md: "65%" }} mt={15} mb={5} >
+      <Box
+        textAlign="center"
+        width={{ xs: "100%", md: "65%" }}
+        sx={{ margin: "100px auto 5px", textAlign: "center" }}
+      >
         <Chip
           sx={{
             bgcolor: "#fff",
@@ -49,6 +53,8 @@ const Section3 = () => {
           flexDirection: "column",
           gap: "20px",
           borderRadius: "40px",
+          margin: "0 auto",
+          textAlign: "center",
         }}
       >
         {services.map((service, index) => (

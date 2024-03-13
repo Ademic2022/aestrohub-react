@@ -10,6 +10,7 @@ const Services = ({ service }) => {
         height: "650px",
         border: "1px solid #5c5c5c",
         borderRadius: "40px",
+        margin: "0 auto", textAlign: "center"
       }}
     >
       <Box

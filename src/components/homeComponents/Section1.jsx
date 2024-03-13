@@ -4,7 +4,12 @@ import { Box, Typography, CardMedia, Button } from "@mui/material";
 const Section1 = () => {
   return (
     <React.Fragment>
-      <Box textAlign="center" width={{ xs: "100%", md: "65%" }} height="281px">
+      <Box
+        textAlign="center"
+        width={{ xs: "100%", md: "65%" }}
+        height="281px"
+        sx={{ margin: "0 auto", textAlign: "center" }}
+      >
         <Typography
           mb={3}
           variant="h2"
@@ -38,13 +43,21 @@ const Section1 = () => {
           <Typography variant="body2">Explore our station</Typography>
         </Button>
       </Box>
-      <Box sx={{ display: { md: "block", xs: "none" } }}>
+
+      <Box
+        sx={{
+          display: { md: "block", xs: "none" },
+          margin: "0 auto",
+          textAlign: "center",
+          width: "630.41px",
+        }}
+      >
         <CardMedia
           component="img"
           image="/images/image1.jpeg"
           alt="Logo"
           sx={{
-            width: "630.41px",
+            width: "100%",
             height: "631.95px",
             my: 0,
             transform: "rotate(180deg)",
@@ -52,6 +65,7 @@ const Section1 = () => {
           }}
         />
       </Box>
+
       {/* mobile display */}
       <Box sx={{ display: { md: "none", xs: "block" } }}>
         <CardMedia
