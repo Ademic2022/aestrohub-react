@@ -38,7 +38,7 @@ const Socials = () => {
           bgcolor: "#fff",
           fontSize: "18px",
           fontFamily: "Outfit",
-          color: "#FF006E",
+          color: "#3772FF",
           padding: "5px",
           mb: "20px",
         }}
@@ -54,10 +54,10 @@ const Socials = () => {
             alt="icon"
           />
         }
-        label="Our Products"
+        label="Contacts"
       />
       {contacts.map((contact) => (
-        <Box mb={3} display="inline-flex">
+        <Box mb={3} display="inline-flex" sx={{cursor:"pointer"}}>
           <Box sx={{ fontSize: 30, mr: 1 }}>{socialIcons(contact.social)}</Box>
           <Typography
             key={contact.id}
