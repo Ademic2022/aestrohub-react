@@ -41,7 +41,7 @@ const Services = () => {
           mb={3}
           variant="body"
           sx={{
-            fontSize: { xs: "32px", md: "28px" },
+            fontSize: { xs: "20px", md: "28px" },
             textAlign: "left",
             color: "grey.lightActive",
           }}

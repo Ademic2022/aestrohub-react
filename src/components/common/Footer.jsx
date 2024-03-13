@@ -6,6 +6,7 @@ import {
   Typography,
   TextField,
   Button,
+  CardMedia,
 } from "@mui/material";
 
 import Services from "./footerComponents/Services";
@@ -19,7 +20,7 @@ const Footer = () => {
         <Box
           sx={{
             position: "relative",
-            height: "1345px",
+            // height: "1345px",
             backgroundSize: "cover",
           }}
         >
@@ -29,6 +30,7 @@ const Footer = () => {
               justifyContent: "space-around",
               flexDirection: { xs: "column", md: "row" },
               alignItems: "flex-start",
+              // zIndex: 99999,
             }}
           >
             <Services />
@@ -45,6 +47,7 @@ const Footer = () => {
             width={{ xs: "max-width", md: "1280px" }}
             sx={{
               height: "256px",
+
               border: "1px solid #5c5c5c",
               borderRadius: "24px",
               overflowX: "auto",
@@ -103,6 +106,25 @@ const Footer = () => {
               </Grid>
             </Box>
           </Box>
+          <CardMedia
+            sx={{
+              position: "absolute",
+              top: { xs: 600, md: 0 },
+              left: { xs: "20px", md: "726px" },
+              height: "1040px",
+              objectFit: "cover",
+              width: { xs: "300px", md: "580px" },
+              pointerEvents: "none",
+            }}
+            image="images/rocket.png"
+            title="Article Image"
+          />
+
+          <CardMedia
+            sx={{ height: "318px", borderRadius: "16px", mt: 25 }}
+            image="images/Smoke.png"
+            title="Article Image"
+          />
         </Box>
       </Container>
     </React.Fragment>
