@@ -8,7 +8,9 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import { AiOutlineClose } from "react-icons/ai";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import Toolbar from "@mui/material/Toolbar";
 import { alpha } from "@mui/system";
 import Button from "@mui/material/Button";
@@ -48,7 +50,14 @@ const ResponsiveNavBar = (props) => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              sx={{
+                textAlign: "center",
+                border: "1px solid #5c5c5c",
+                borderRadius: 3,
+                m: 0.5,
+              }}
+            >
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -90,7 +99,18 @@ const ResponsiveNavBar = (props) => {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon />
+            <Box
+              sx={{
+                display: "flex",
+                bgcolor: "#fff",
+                color: "#000",
+                p: 1.5,
+                border: "1px solid #5c5c5c",
+                borderRadius: "50%",
+              }}
+            >
+              {mobileOpen ? <CloseIcon /> : <MenuIcon />}
+            </Box>
           </IconButton>
 
           <Box
