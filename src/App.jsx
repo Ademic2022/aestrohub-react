@@ -12,6 +12,7 @@ import {
   Blog,
   NotFound,
 } from "./pages";
+import Footer from "./components/common/Footer";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           </Routes>
         </Box>
       </Container>
+      <Footer />
     </React.Fragment>
   );
 };
