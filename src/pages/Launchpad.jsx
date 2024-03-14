@@ -1,12 +1,15 @@
-import React from 'react'
-import ResponsiveNavBar from '../components/common/Navbar'
+import React from "react";
+import { Box } from "@mui/material";
+import Section1 from "../components/LaunchPad/Section1";
 
 const Launchpad = () => {
   return (
-    <div>
-      Launch Pad
-    </div>
-  )
-}
+    <React.Fragment>
+      <Box mt={5}>
+        <Section1 />
+      </Box>
+    </React.Fragment>
+  );
+};
 
-export default Launchpad
+export default Launchpad;

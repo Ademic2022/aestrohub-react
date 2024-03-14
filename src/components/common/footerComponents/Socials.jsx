@@ -57,10 +57,14 @@ const Socials = () => {
         label="Contacts"
       />
       {contacts.map((contact) => (
-        <Box mb={3} display="inline-flex" sx={{cursor:"pointer"}}>
+        <Box
+          key={contact.id}
+          mb={3}
+          display="inline-flex"
+          sx={{ cursor: "pointer" }}
+        >
           <Box sx={{ fontSize: 30, mr: 1 }}>{socialIcons(contact.social)}</Box>
           <Typography
-            key={contact.id}
             variant="body"
             sx={{
               fontSize: { xs: "20px", md: "28px" },

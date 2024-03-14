@@ -3,18 +3,15 @@ import PageSection from "../common/PageSection";
 
 const Section1 = () => {
   const sectionDetails = {
-    id: 1,
-    title: "AestroHub",
-    subtitle:
-      "We're not just an agency, we're a launchpad. A cross-functional, all-in-one service provider for everything you need to propel your Web3 project to the stars.",
-    btnText: "Explore our station",
-    img: "/images/image1.jpeg",
+    title: "AestroBlog",
+    subtitle: "Web3 demystified. Read about the latest articles, product review and updates around web3 ecosystem.",
+    btnText: "Make a Proposal",
+    img: "images/g10.png",
     config: {
       img: {
+        height: "400px",
         my: 3,
-        height: "631.95px",
         objectFit: "contain",
-        transform: "rotate(180deg)",
       },
       btn: {
         width: "200px",
@@ -22,7 +19,6 @@ const Section1 = () => {
       },
     },
   };
-
   return (
     <React.Fragment>
       <PageSection sectionDetails={sectionDetails} />

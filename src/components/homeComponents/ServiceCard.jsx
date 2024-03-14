@@ -17,8 +17,8 @@ const ServiceCard = ({ data }) => {
         backgroundSize: "cover",
         flexDirection: { xs: "column", md: "row" },
         marginBottom: "20px",
-        height: { xs: "auto", md: "330px" },
-        borderRadius: "16px",
+        height: { xs: "400px", md: "330px" },
+        borderRadius: "20px",
       }}
     >
       <CardContent>
@@ -37,7 +37,7 @@ const ServiceCard = ({ data }) => {
               width: 45,
               mb: "20px",
             }}
-            label={6}
+            label={data.id}
           />
           <Typography
             mb={3}

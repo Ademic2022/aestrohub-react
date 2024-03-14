@@ -1,11 +1,14 @@
 import React from "react";
 import { Box } from "@mui/material";
+import Section1 from "../components/AboutComponent/Section1";
 
 const AboutUs = () => {
   return (
-    <Box component="main">
-      About us
-    </Box>
+    <React.Fragment>
+      <Box mt={5}>
+        <Section1 />
+      </Box>
+    </React.Fragment>
   );
 };
 

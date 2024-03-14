@@ -1,24 +1,27 @@
 import React, { useEffect } from "react";
-import AppBar from "@mui/material/AppBar";
 import { motion } from "framer-motion";
-import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Toolbar from "@mui/material/Toolbar";
 import { alpha } from "@mui/system";
-import Button from "@mui/material/Button";
 import { Link, useLocation } from "react-router-dom";
-import { Container, CardMedia } from "@mui/material";
 import { navItems } from "../data/navlinks";
 import NavTracker from "../../utils/NavTracker";
 import { listVariants, itemVariants } from "../data/motionProps/navbar";
+import {
+  AppBar,
+  Container,
+  Drawer,
+  Divider,
+  Box,
+  CardMedia,
+  Button,
+  Toolbar,
+  ListItemText,
+  ListItemButton,
+  ListItem,
+  List,
+  IconButton,
+} from "@mui/material";
 
 const drawerWidth = 240;
 
@@ -69,6 +72,8 @@ const ResponsiveNavBar = (props) => {
                 borderRadius: 3,
                 m: 0.5,
               }}
+              component={Link}
+              to={`/${item.trim().toLowerCase().replace(/\s+/g, "-")}`}
             >
               <ListItemText primary={item} />
             </ListItemButton>

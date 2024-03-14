@@ -11,7 +11,7 @@ import Section7 from "../components/homeComponents/Section7";
 const Home = () => {
   return (
     <React.Fragment>
-      <Box mt={10}>
+      <Box mt={5}>
         <Section1 />
         <Section2 />
         <Section3 />
