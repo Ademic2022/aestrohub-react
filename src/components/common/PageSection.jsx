@@ -15,7 +15,7 @@ const PageSection = ({ sectionDetails }) => {
         <Typography
           mb={3}
           variant="h2"
-          sx={{ fontSize: { xs: "56px", md: "80px" } }}
+          sx={{ fontSize: { xs: "46px", md: "80px" } }}
         >
           {title}
         </Typography>
@@ -24,7 +24,11 @@ const PageSection = ({ sectionDetails }) => {
           gutterBottom
           mb={4}
           variant="body1"
-          sx={{ px: { md: "90px" } }}
+          sx={{
+            px: { md: "90px" },
+            textAlign: "justify",
+            fontSize: { xs: "18px", md: "22px" },
+          }}
         >
           {subtitle}
         </Typography>
