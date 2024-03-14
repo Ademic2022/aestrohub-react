@@ -9,7 +9,6 @@ const Section2 = () => {
       <Box
         textAlign="center"
         width={{ xs: "100%", md: "65%" }}
-        mb={6}
         sx={{ margin: "40px auto", textAlign: "center" }}
       >
         <Typography variant="h2" sx={{ fontSize: { xs: "32px", md: "56px" } }}>
