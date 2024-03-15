@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, CardMedia, Chip } from "@mui/material";
-import { contacts } from "../../Data/footer";
+import { contacts } from "../../data/footer";
 import { MdOutlineMail } from "react-icons/md";
 import { FaDiscord } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";

@@ -3,9 +3,9 @@ import { Box, Typography, CardMedia, Chip } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Services from "./Services";
-import { services } from "../Data/services";
+import { services } from "../data/services";
 import ServiceCard from "./ServiceCard";
-import { responsive } from "../Data/CarouselResponsive";
+import { responsive } from "../data/CarouselResponsive";
 
 const Section3 = () => {
   return (

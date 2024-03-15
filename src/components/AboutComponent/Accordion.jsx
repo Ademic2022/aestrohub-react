@@ -3,7 +3,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MuiAccordion from "@mui/material/Accordion";
 import { styled } from "@mui/material/styles";
 import { alpha } from "@mui/system";
-import { FAQs } from "../Data/aboutUs";
+import { FAQs } from "../data/aboutUs";
 import {
   Box,
   //   Accordion,
@@ -31,7 +31,7 @@ const AccordionExpand = () => {
     setExpanded(newExpanded ? panel : false);
   };
   return (
-    <Box width={{ md: 1280 }} sx={{margin:"0 auto"}}>
+    <Box width={{ md: 1280 }} sx={{ margin: "0 auto" }}>
       {/* default open */}
       <Accordion defaultExpanded>
         <AccordionSummary
@@ -74,7 +74,11 @@ const AccordionExpand = () => {
           <AccordionSummary
             expandIcon={
               <ExpandMoreIcon
-                sx={{ border:"1px solid #5c5c5c", borderRadius: "50%", color: "#fff" }}
+                sx={{
+                  border: "1px solid #5c5c5c",
+                  borderRadius: "50%",
+                  color: "#fff",
+                }}
               />
             }
             aria-controls={`panel${faq.id}-content`}

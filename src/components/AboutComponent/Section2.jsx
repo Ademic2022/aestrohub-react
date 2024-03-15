@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import AboutCard from "../common/AboutCard";
-import { items1 } from "../Data/aboutUs";
+import { items1 } from "../data/aboutUs";
 
 const Section2 = () => {
   return (

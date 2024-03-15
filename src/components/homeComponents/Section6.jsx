@@ -13,8 +13,8 @@ import { alpha } from "@mui/system";
 import { FaUserTie } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
-import { articles } from "../Data/articles";
-import { responsive } from "../Data/CarouselResponsive";
+import { articles } from "../data/articles";
+import { responsive } from "../data/CarouselResponsive";
 
 const Section6 = () => {
   return (
