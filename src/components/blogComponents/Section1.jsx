@@ -1,10 +1,11 @@
 import React from "react";
-import PageSection from "../common/PageSection";
+import PageSection from "../Common/PageSection";
 
 const Section1 = () => {
   const sectionDetails = {
     title: "AestroBlog",
-    subtitle: "Web3 demystified. Read about the latest articles, product review and updates around web3 ecosystem.",
+    subtitle:
+      "Web3 demystified. Read about the latest articles, product review and updates around web3 ecosystem.",
     btnText: "Make a Proposal",
     img: "images/g10.png",
     config: {

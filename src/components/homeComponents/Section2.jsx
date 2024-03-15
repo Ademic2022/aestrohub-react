@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, CardMedia } from "@mui/material";
-import { companies } from "../data/companies";
+import { companies } from "../Data/companies";
 import Marquee from "react-marquee-slider";
 
 const Section2 = () => {
@@ -44,7 +44,6 @@ const Section2 = () => {
                 component="img"
                 image={company.logo}
                 alt="Logo"
-                sx={{}}
               />
             </Box>
           ))}

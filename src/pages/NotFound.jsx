@@ -13,7 +13,7 @@ const NotFound = () => {
         alignItems: "center",
       }}
     >
-      Hello
+      404 Page Not Found
     </Container>
   );
 };

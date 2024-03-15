@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, CardMedia, Chip } from "@mui/material";
-import { services } from "../../data/services";
+import { services } from "../../Data/services";
 
 const Services = () => {
   return (

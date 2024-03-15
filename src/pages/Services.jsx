@@ -1,13 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
-import Section1 from "../components/serviceComponents/Home";
-import Marketing from "../components/serviceComponents/Marketing";
-import Design from "../components/serviceComponents/Design";
-import Management from "../components/serviceComponents/Management";
-import Development from "../components/serviceComponents/Development";
-import Writing from "../components/serviceComponents/Writing";
-import Offering from "../components/serviceComponents/Offering";
-import Company from "../components/serviceComponents/Company";
+import Section1 from "../components/ServiceComponents/Home";
+import Marketing from "../components/ServiceComponents/Marketing";
+import Design from "../components/ServiceComponents/Design";
+import Management from "../components/ServiceComponents/Management";
+import Development from "../components/ServiceComponents/Development";
+import Writing from "../components/ServiceComponents/Writing";
+import Offering from "../components/ServiceComponents/Offering";
+import Company from "../components/ServiceComponents/Company";
 
 const Services = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography,  } from "@mui/material";
-import Card from "../common/Card";
-import { marketing} from "../data/services";
+import Card from "../Common/Card";
+import { marketing} from "../Data/services";
 
 const Marketing = () => {
   return (

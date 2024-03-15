@@ -3,7 +3,6 @@ import { Box, Typography, CardMedia, Button } from "@mui/material";
 
 const PageSection = ({ sectionDetails }) => {
   const { title, subtitle, btnText, img, config } = sectionDetails;
-  console.log(config.img);
   return (
     <React.Fragment>
       <Box
