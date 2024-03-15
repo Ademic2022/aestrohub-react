@@ -40,19 +40,19 @@ export const marketing = [
   {
     id: 1,
     title: "Paid Marketing",
-    img: "/icons/Pill.png",
+    img: "/icons/pill.png",
     desc: "Elevate your brand's online presence with targeted campaigns across Google Ads, Facebook Ads, and more, driving traffic and boosting conversions.",
   },
   {
     id: 2,
     title: "Social Media Marketing",
-    img: "/icons/Pill.png",
+    img: "/icons/pill.png",
     desc: "Leverage influencer partnerships to amplify your brand's voice across social platforms through compelling content and fostering community engagement.",
   },
   {
     id: 3,
     title: "SEO and Content Marketing",
-    img: "/icons/Pill.png",
+    img: "/icons/pill.png",
     desc: "Boost your website's visibility  with strategic keyword research, on-page optimization, content creation, and effective link-building strategies.",
   },
 ];
