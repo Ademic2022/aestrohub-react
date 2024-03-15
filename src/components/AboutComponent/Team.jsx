@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Typography, Chip, CardMedia } from "@mui/material";
 import AboutCard1 from "../Common/AboutCard1";
-import { products } from "../Data/aboutUs";
+import { team } from "../Data/aboutUs";
 
-const Products = () => {
+const Team = () => {
   return (
     <React.Fragment>
       <Box
@@ -15,7 +15,7 @@ const Products = () => {
             bgcolor: "#fff",
             fontSize: "18px",
             fontFamily: "Outfit",
-            color: "#FF006E",
+            color: "#0EAD69",
             padding: "5px",
             mb: "20px",
           }}
@@ -31,19 +31,19 @@ const Products = () => {
               alt="icon"
             />
           }
-          label="What we do"
+          label="The brains  behind Aestrohub"
         />
         <Typography
           mb={3}
           variant="h2"
           sx={{ fontSize: { xs: "32px", md: "56px" } }}
         >
-          Our Products
+          The Team
         </Typography>
       </Box>
-      <AboutCard1 datas={products} />
+      <AboutCard1 cardHeight="455px" datas={team} />
     </React.Fragment>
   );
 };
 
-export default Products;
+export default Team;

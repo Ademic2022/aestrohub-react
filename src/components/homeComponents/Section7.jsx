@@ -8,7 +8,6 @@ const Section7 = () => {
         display="flex"
         alignItems="center"
         gap={4}
-        mt={15}
         p={2}
         width={{ xs: "max-width", md: "1280px" }}
         sx={{
@@ -61,6 +60,7 @@ const Section7 = () => {
       <Button
         variant="outlined"
         tabIndex={-1}
+        sx={{mb:5}}
         startIcon={
           <CardMedia
             component="img"

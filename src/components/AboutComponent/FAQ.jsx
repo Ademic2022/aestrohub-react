@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, Typography, Chip, CardMedia } from "@mui/material";
-import AboutCard1 from "../Common/AboutCard1";
-import { products } from "../Data/aboutUs";
+import AccordionExpand from "./Accordion";
 
-const Products = () => {
+const FAQ = () => {
   return (
     <React.Fragment>
       <Box
@@ -15,7 +14,7 @@ const Products = () => {
             bgcolor: "#fff",
             fontSize: "18px",
             fontFamily: "Outfit",
-            color: "#FF006E",
+            color: "#0EAD69",
             padding: "5px",
             mb: "20px",
           }}
@@ -31,19 +30,19 @@ const Products = () => {
               alt="icon"
             />
           }
-          label="What we do"
+          label="FAQ"
         />
         <Typography
           mb={3}
           variant="h2"
           sx={{ fontSize: { xs: "32px", md: "56px" } }}
         >
-          Our Products
+          Frequently Asked Questions
         </Typography>
       </Box>
-      <AboutCard1 datas={products} />
+      <AccordionExpand />
     </React.Fragment>
   );
 };
 
-export default Products;
+export default FAQ;

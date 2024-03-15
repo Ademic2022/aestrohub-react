@@ -70,60 +70,57 @@ export const products = [
 export const team = [
   {
     id: 1,
-    name: "Triple A",
-    img: "/avatars/male.png",
-    about:
-      "Meet our visionary founder, who is leading the charge in revolutionizing the web3 landscape. With a deep passion for blockchain technology and a relentless drive for innovation, he is dedicated to shaping the process of building both physical and digital products.",
+    title: "Triple A",
+    img: "/avatars/male.jpeg",
+    desc: "Meet our visionary founder, who is leading the charge in revolutionizing the web3 landscape. With a deep passion for blockchain technology and a relentless drive for innovation, he is dedicated to shaping the process of building both physical and digital products.",
   },
   {
     id: 2,
-    name: "James",
-    img: "/avatars/man.png",
-    about:
-      "Joining forces with the founder is our esteemed co-founder, James. With a background in product development, he brings a wealth of knowledge and experience to our team, driving our mission to empower individuals and businesses in the web3 ecosystem.",
+    title: "James",
+    img: "/avatars/man.jpeg",
+    desc: "Joining forces with the founder is our esteemed co-founder, James. With a background in product development, he brings a wealth of knowledge and experience to our team, driving our mission to empower individuals and businesses in the web3 ecosystem.",
   },
   {
     id: 3,
-    name: "OPD",
-    img: "/avatars/man1.png",
-    about:
-      "Our community is at the heart of everything we do. Led by our dedicated community manager, we strive to foster an inclusive and engaging environment where members can connect, learn, and grow together. Join us and be a part of the web3 revolution!",
+    title: "OPD",
+    img: "/avatars/man1.jpeg",
+    desc: "Our community is at the heart of everything we do. Led by our dedicated community manager, we strive to foster an inclusive and engaging environment where members can connect, learn, and grow together. Join us and be a part of the web3 revolution!",
   },
 ];
-export const QAs = [
-  {
-    id: 1,
-    question: "Triple A",
-    img: "/avatars/male.png",
-    answer:
-      "Meet our visionary founder, who is leading the charge in revolutionizing the web3 landscape. With a deep passion for blockchain technology and a relentless drive for innovation, he is dedicated to shaping the process of building both physical and digital products.",
-  },
+export const FAQs = [
   {
     id: 2,
-    question: "James",
-    img: "/avatars/man.png",
+    question: "What are the services that Aestrohub offers ?",
     answer:
-      "Joining forces with the founder is our esteemed co-founder, James. With a background in product development, he brings a wealth of knowledge and experience to our team, driving our mission to empower individuals and businesses in the web3 ecosystem.",
+      "Aestrohub offers a comprehensive suite of services tailored to the evolving web3 ecosystem. This includes blockchain development, smart contract auditing, NFT marketplace creation, decentralized finance (DeFi) solutions, and educational resources for businesses and individuals looking to transition into the web3 space. Our aim is to be a one-stop solution for all your web3 development and consultancy needs.",
   },
   {
     id: 3,
-    question: "OPD",
-    img: "/avatars/man1.png",
+    question:
+      "Can i made a custom offer for skills that are not included here ?",
+
     answer:
-      "Our community is at the heart of everything we do. Led by our dedicated community manager, we strive to foster an inclusive and engaging environment where members can connect, learn, and grow together. Join us and be a part of the web3 revolution!",
+      "Absolutely. Aestrohub prides itself on its flexibility and our ability to cater to unique client needs. If you have a specific requirement or a novel project idea beyond our listed services, we encourage you to reach out to us. Our team will work closely with you to understand your vision and devise a tailored solution or direct you to the right resources within our vast network of web3 professionals.",
   },
   {
     id: 4,
-    question: "OPD",
-    img: "/avatars/man1.png",
+    question: "What are the mode of payment ?",
+
     answer:
-      "Our community is at the heart of everything we do. Led by our dedicated community manager, we strive to foster an inclusive and engaging environment where members can connect, learn, and grow together. Join us and be a part of the web3 revolution!",
+      "Aestrohub accepts a variety of payment methods to accommodate our global client base. This includes traditional fiat currencies via bank transfer or credit card, as well as cryptocurrencies such as Bitcoin, Ethereum, and stablecoins. Our goal is to make transactions as easy and seamless as possible for our clients, ensuring a smooth engagement process from start to finish.",
   },
   {
     id: 5,
-    question: "OPD",
-    img: "/avatars/man1.png",
+    question: "Can i hire someone permanently from Aestrohub ?",
+
     answer:
-      "Our community is at the heart of everything we do. Led by our dedicated community manager, we strive to foster an inclusive and engaging environment where members can connect, learn, and grow together. Join us and be a part of the web3 revolution!",
+      "While Aestrohub primarily functions as a platform connecting clients with freelance talent and consultancy services, we do entertain the possibility of arranging permanent placements under special circumstances. If you're interested in permanently hiring talent you've worked with through Aestrohub, please discuss it with us. We're open to facilitating such arrangements in a way that benefits all parties involved.",
+  },
+  {
+    id: 6,
+    question: "Is Aestrohub a venture capitalist ?",
+
+    answer:
+      "While Aestrohub is not a venture capitalist firm in the traditional sense, we do play an active role in the web3 startup ecosystem through strategic partnerships and by providing support to promising projects. Our focus lies in building and nurturing a thriving community of web3 innovators. While we may occasionally invest in or sponsor projects that align with our vision, our primary mission is to empower developers, creators, and entrepreneurs to succeed in the web3 space through our platform's services and resources.",
   },
 ];
