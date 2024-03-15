@@ -140,3 +140,34 @@ export const writings = [
     desc: "We dive deep into complex topics, providing in-depth analysis, insights, and solutions that showcase your expertise and thought leadership in your industry.",
   },
 ];
+
+export const padservices = [
+  {
+    id: 1,
+    title: "Community Funding",
+    bgImage: "/images/image6.jpeg",
+    description:
+      "Leverage a vibrant community of backers who are passionate about supporting innovative ideas.  Take along  a community of  investors who want to reach the moon together with you.",
+  },
+  {
+    id: 2,
+    title: "Venture Capitalist",
+    bgImage: "/images/image3.jpeg",
+    description:
+      "As a startup with the dream of taking your project to the stars, enjoy an early stage investment to remove the roadblocks in reaching the moon. ",
+  },
+  {
+    id: 3,
+    title: "Early Access",
+    bgImage: "/images/image12.png",
+    description:
+      "Looking for the next rocket going to the moon,  secure your sit as an early investor though Aestropad to find the next web3 gem.",
+  },
+  {
+    id: 4,
+    title: "Founders & Funders",
+    bgImage: "/images/image13.png",
+    description:
+      "Bringing founders and funders to shape the web3 ecosystem in developing new products through sustainable investments and partnerships.",
+  },
+];

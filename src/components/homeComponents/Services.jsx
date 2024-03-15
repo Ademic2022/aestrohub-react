@@ -49,7 +49,7 @@ const Services = ({ service }) => {
                   width: 45,
                   mb: "20px",
                 }}
-                label={6}
+                label={service.id}
               />
               <Typography
                 mb={3}
