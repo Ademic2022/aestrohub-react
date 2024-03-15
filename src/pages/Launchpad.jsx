@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import Section1 from "../components/launchPad/Section1";
+import Section1 from "../components/LaunchPad/Section1";
 
 const Launchpad = () => {
   return (
