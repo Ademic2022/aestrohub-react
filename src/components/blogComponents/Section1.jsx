@@ -1,5 +1,5 @@
 import React from "react";
-import PageSection from "../Common/PageSection";
+import PageSection from "../common/PageSection";
 
 const Section1 = () => {
   const sectionDetails = {

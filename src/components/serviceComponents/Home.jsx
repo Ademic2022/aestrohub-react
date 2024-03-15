@@ -1,5 +1,5 @@
 import React from "react";
-import PageSection from "../Common/PageSection";
+import PageSection from "../common/PageSection";
 
 const Section1 = () => {
   const sectionDetails = {
@@ -15,7 +15,7 @@ const Section1 = () => {
         objectFit: "contain",
       },
       typography: {
-        fontSize: { xs: "56px", md: "80px"}
+        fontSize: { xs: "56px", md: "80px" },
       },
     },
   };

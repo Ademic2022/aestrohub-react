@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import Card from "../Common/Card";
+import Card from "../common/Card";
 import { writings } from "../Data/services";
 
 const Writing = () => {

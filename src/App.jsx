@@ -1,6 +1,6 @@
 import React from "react";
 import GalaxyBackground from "./utils/GalaxyBackground";
-import ResponsiveNavBar from "./components/Common/Navbar";
+import ResponsiveNavBar from "./components/common/Navbar";
 import { Routes, Route } from "react-router-dom";
 import { Box, Container } from "@mui/material";
 import {
@@ -12,7 +12,7 @@ import {
   Blog,
   NotFound,
 } from "./pages";
-import Footer from "./components/Common/Footer";
+import Footer from "./components/common/Footer";
 
 const App = () => {
   return (

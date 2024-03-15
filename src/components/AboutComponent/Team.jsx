@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Chip, CardMedia } from "@mui/material";
-import AboutCard1 from "../Common/AboutCard1";
+import AboutCard1 from "../common/AboutCard1";
 import { team } from "../Data/aboutUs";
 
 const Team = () => {
