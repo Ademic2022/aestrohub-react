@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material';
-import Section1 from '../components/BlogComponents/Section1';
+import Section1 from '../components/blogComponents/Section1';
 
 const Blog = () => {
   return (
