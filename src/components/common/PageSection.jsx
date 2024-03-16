@@ -1,14 +1,13 @@
 import React from "react";
 import { Box, Typography, CardMedia, Button } from "@mui/material";
 
-const PageSection = ({ sectionDetails }) => {
+const PageSection = ({ sectionDetails, button }) => {
   const { title, subtitle, btnText, img, config } = sectionDetails;
   return (
     <React.Fragment>
       <Box
         textAlign="center"
         width={{ xs: "100%", md: "65%" }}
-        height="281px"
         sx={{ margin: "0 auto", textAlign: "center" }}
       >
         <Typography
@@ -30,20 +29,22 @@ const PageSection = ({ sectionDetails }) => {
         >
           {subtitle}
         </Typography>
-        <Button
-          variant="outlined"
-          tabIndex={-1}
-          startIcon={
-            <CardMedia
-              component="img"
-              image="/icons/rocket.png"
-              sx={{ width: 24, height: 24 }}
-              alt="icon"
-            />
-          }
-        >
-          <Typography variant="body2">{btnText}</Typography>
-        </Button>
+        {button && (
+          <Button
+            variant="outlined"
+            tabIndex={-1}
+            startIcon={
+              <CardMedia
+                component="img"
+                image="/icons/rocket.png"
+                sx={{ width: 24, height: 24 }}
+                alt="icon"
+              />
+            }
+          >
+            <Typography variant="body2">{btnText}</Typography>
+          </Button>
+        )}
       </Box>
 
       <Box

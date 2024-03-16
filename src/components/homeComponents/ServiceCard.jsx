@@ -17,7 +17,8 @@ const ServiceCard = ({ data }) => {
         backgroundSize: "cover",
         flexDirection: { xs: "column", md: "row" },
         marginBottom: "20px",
-        height: { xs: "400px", md: "330px" },
+        border: "1px solid #5c5c5c",
+        height: { xs: "auto", md: "330px" },
         borderRadius: "20px",
       }}
     >
@@ -62,20 +63,6 @@ const ServiceCard = ({ data }) => {
           >
             {data.description}
           </Typography>
-          <Button
-            variant="outlined"
-            tabIndex={-1}
-            startIcon={
-              <CardMedia
-                component="img"
-                image="/icons/rocket.png"
-                sx={{ width: 24, height: 24 }}
-                alt="icon"
-              />
-            }
-          >
-            <Typography variant="body2">Explore our station</Typography>
-          </Button>
         </Box>
       </CardContent>
     </Card>

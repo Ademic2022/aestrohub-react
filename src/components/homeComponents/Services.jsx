@@ -87,7 +87,7 @@ const Services = ({ service, button }) => {
                     />
                   }
                 >
-                  <Typography variant="body2">Explore our station</Typography>
+                  <Typography variant="body2">{service.btnText}</Typography>
                 </Button>
               )}
             </Box>

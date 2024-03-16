@@ -3,6 +3,7 @@ export const services = [
     id: 1,
     title: "Strategy & Consulting",
     bgImage: "/images/image6.jpeg",
+    btnText: "Explore our station",
     description:
       "Navigating the uncharted waters of Web3 can be daunting. You need a clear roadmap to guide them through complex challenges, capitalize on emerging opportunities, and build sustainable success.",
   },
@@ -10,6 +11,7 @@ export const services = [
     id: 2,
     title: "Community building & PR",
     bgImage: "/images/image11.png",
+    btnText: "Explore our station",
     description:
       "Reaching the stars in the vast Web3 universe requires more than just a brilliant idea and solid tech. You need a powerful voice that cuts through the noise and ignites a passionate community.",
   },
@@ -17,6 +19,7 @@ export const services = [
     id: 3,
     title: "Design & Development",
     bgImage: "/images/image12.png",
+    btnText: "Explore our station",
     description:
       "we've developed and deployed high-impact Web3 projects for diverse clients, from startups to established enterprises prioritizing code quality and security, ensuring your project is built to last.",
   },
@@ -24,6 +27,7 @@ export const services = [
     id: 4,
     title: "Launchpad & Fundraising",
     bgImage: "/images/image13.png",
+    btnText: "Explore our station",
     description:
       "Imagine your revolutionary Web3 project soaring through the cosmos. We are your one-stop shop for securing the capital and momentum your project needs to thrive.",
   },
@@ -31,6 +35,7 @@ export const services = [
     id: 5,
     title: "Marketing & Management",
     bgImage: "/images/image3.jpeg",
+    btnText: "Book a Consultation",
     description:
       "Elevate your product to reach your target audience through a management and marketing strategy that separates you from the crowd.",
   },
@@ -40,19 +45,19 @@ export const marketing = [
   {
     id: 1,
     title: "Paid Marketing",
-    img: "/icons/pill.png",
+    img: "/icons/Pill.png",
     desc: "Elevate your brand's online presence with targeted campaigns across Google Ads, Facebook Ads, and more, driving traffic and boosting conversions.",
   },
   {
     id: 2,
     title: "Social Media Marketing",
-    img: "/icons/pill.png",
+    img: "/icons/Pill.png",
     desc: "Leverage influencer partnerships to amplify your brand's voice across social platforms through compelling content and fostering community engagement.",
   },
   {
     id: 3,
     title: "SEO and Content Marketing",
-    img: "/icons/pill.png",
+    img: "/icons/Pill.png",
     desc: "Boost your website's visibility  with strategic keyword research, on-page optimization, content creation, and effective link-building strategies.",
   },
 ];
@@ -123,7 +128,7 @@ export const developments = [
 export const writings = [
   {
     id: 1,
-    title: "Copy Writing",
+    title: "Copywriting",
     img: "/icons/helix.png",
     desc: "Craft compelling and persuasive copy that resonates with your audience and drives action, advertisements, websites, or marketing material.",
   },

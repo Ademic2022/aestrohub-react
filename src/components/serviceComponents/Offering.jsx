@@ -97,7 +97,7 @@ const Offering = () => {
                 <Typography
                   mb={2}
                   variant="body2"
-                  textAlign="justify"
+                  textAlign="left"
                   sx={{
                     fontSize: { xs: "14px", md: "22px" },
                     fontWeight: 400,
@@ -190,7 +190,7 @@ const Offering = () => {
                 <Typography
                   mb={2}
                   variant="body2"
-                  textAlign="justify"
+                  textAlign="left"
                   sx={{
                     fontSize: { xs: "14px", md: "22px" },
                     fontWeight: 400,

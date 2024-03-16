@@ -75,7 +75,11 @@ const FullWidthSlider = () => {
             title="Article Image"
           />
           <Box>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              direction={{ xs: "column-reverse", md: "row" }}
+              spacing={2}
+            >
               <Grid
                 container
                 item

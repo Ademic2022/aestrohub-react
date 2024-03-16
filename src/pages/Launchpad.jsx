@@ -11,7 +11,10 @@ const Launchpad = () => {
         <Section1 />
         <LaunchPadServices />
         <Box mt={15}>
-          <Section7 title=".... Aestro Hub x Aestro Pad ...." />
+          <Section7
+            bgcolor="#0EAD69"
+            title=".... Aestro Hub x Aestro Pad ...."
+          />
         </Box>
       </Box>
     </React.Fragment>

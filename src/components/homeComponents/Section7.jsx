@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, CardMedia, Button } from "@mui/material";
 
-const Section7 = ({ title }) => {
+const Section7 = ({ title, bgcolor }) => {
   return (
     <React.Fragment>
       <Box
@@ -12,7 +12,7 @@ const Section7 = ({ title }) => {
         width={{ xs: "max-width", md: "1280px" }}
         sx={{
           height: "160px",
-          bgcolor: "#FF006E",
+          bgcolor: bgcolor? bgcolor : "#FF006E",
           borderRadius: "24px",
           overflowX: "auto",
           margin: "45px auto",

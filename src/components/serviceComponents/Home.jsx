@@ -21,7 +21,7 @@ const Section1 = () => {
   };
   return (
     <React.Fragment>
-      <PageSection sectionDetails={sectionDetails} />
+      <PageSection button sectionDetails={sectionDetails} />
     </React.Fragment>
   );
 };
