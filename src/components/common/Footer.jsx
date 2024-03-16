@@ -121,6 +121,19 @@ const Footer = () => {
           />
 
           <CardMedia
+            sx={{
+              position: "absolute",
+              bottom: { xs: 100, md: 100 },
+              height: { xs: "300px", md: "500px" },
+              width: { xs: "300px", md: "500px" },
+              borderRadius: "16px",
+              mt: 25,
+            }}
+            image="images/logo.png"
+            title="Article Image"
+          />
+
+          <CardMedia
             sx={{ height: "318px", borderRadius: "16px", mt: 25 }}
             image="images/Smoke.png"
             title="Article Image"
