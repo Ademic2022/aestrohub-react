@@ -98,7 +98,7 @@ export const prevProps = {
 };
 
 export const featProps = {
-  sectionHeader: "Featured Articles",
+  sectionHeader: "Featured Products",
   label: "Aestro Products",
   color: "#0EAD69",
 };

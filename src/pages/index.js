@@ -1,5 +1,6 @@
 export { default as Home } from "./Home";
 export { default as Blog } from "./Blog";
+export { default as BlogDetails } from "./BlogDetails";
 export { default as Launchpad } from "./Launchpad";
 export { default as Services } from "./Services";
 export { default as AboutUs } from "./AboutUs";

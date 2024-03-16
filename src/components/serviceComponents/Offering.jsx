@@ -98,13 +98,14 @@ const Offering = () => {
                   mb={2}
                   variant="body2"
                   textAlign="left"
+                  lineHeight={1.2}
                   sx={{
                     fontSize: { xs: "14px", md: "22px" },
                     fontWeight: 400,
                   }}
                 >
-                  We offer one-man and one-time service for your project . We
-                  monitor and ensure full delivery of the service.Get a single
+                  We offer one-man and one-time service for your project. We
+                  monitor and ensure full delivery of the service. Get a single
                   professionals to work on your specific needs.
                 </Typography>
                 <Box
@@ -191,6 +192,7 @@ const Offering = () => {
                   mb={2}
                   variant="body2"
                   textAlign="left"
+                  lineHeight={1.2}
                   sx={{
                     fontSize: { xs: "14px", md: "22px" },
                     fontWeight: 400,

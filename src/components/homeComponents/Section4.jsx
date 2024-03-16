@@ -94,8 +94,8 @@ const Section4 = () => {
                     fontWeight: 400,
                   }}
                 >
-                  We offer one-man and one-time service for your project . We
-                  monitor and ensure full delivery of the service.Get a single
+                  We offer one-man and one-time service for your project. We
+                  monitor and ensure full delivery of the service. Get a single
                   professionals to work on your specific needs.
                 </Typography>
                 <Button

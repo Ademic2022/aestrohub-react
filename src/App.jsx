@@ -10,6 +10,7 @@ import {
   AboutUs,
   Launchpad,
   Blog,
+  BlogDetails,
   NotFound,
 } from "./pages";
 import Footer from "./components/common/Footer";
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/home" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/launchpad" element={<Launchpad />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />

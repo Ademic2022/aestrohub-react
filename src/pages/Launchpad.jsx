@@ -12,6 +12,7 @@ const Launchpad = () => {
         <LaunchPadServices />
         <Box mt={15}>
           <Section7
+            bottomText
             bgcolor="#0EAD69"
             title=".... Aestro Hub x Aestro Pad ...."
           />

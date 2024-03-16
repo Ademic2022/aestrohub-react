@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, CardMedia, Button } from "@mui/material";
 
-const Section7 = ({ title, bgcolor }) => {
+const Section7 = ({ title, bgcolor, bottomText }) => {
   return (
     <React.Fragment>
       <Box
@@ -12,7 +12,7 @@ const Section7 = ({ title, bgcolor }) => {
         width={{ xs: "max-width", md: "1280px" }}
         sx={{
           height: "160px",
-          bgcolor: bgcolor? bgcolor : "#FF006E",
+          bgcolor: bgcolor ? bgcolor : "#FF006E",
           borderRadius: "24px",
           overflowX: "auto",
           margin: "45px auto",
@@ -23,7 +23,7 @@ const Section7 = ({ title, bgcolor }) => {
           sx={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
+            justifyContent: "center",
             width: "100%",
           }}
         >
@@ -57,6 +57,19 @@ const Section7 = ({ title, bgcolor }) => {
           />
         </Box>
       </Box>
+      {bottomText && (
+        <Box sx={{ display: "flex", justifyContent: "center", mb: 3 }}>
+          <Typography
+            variant="body2"
+            width={{ xs: "90%", md: "45%" }}
+            color="#9898A8"
+          >
+            AestroPad provides access to different potential investors for your
+            project. Embrace the dynamic system of funding across different
+            channels.
+          </Typography>
+        </Box>
+      )}
       <Button
         variant="outlined"
         tabIndex={-1}
