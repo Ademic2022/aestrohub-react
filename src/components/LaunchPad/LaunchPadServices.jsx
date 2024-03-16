@@ -7,7 +7,7 @@ import { padservices } from "../data/services";
 import ServiceCard from "../homeComponents/ServiceCard";
 import { responsive } from "../data/CarouselResponsive";
 
-const LaunchPadServices = () => {
+const LaunchPadServices = ({ slider }) => {
   return (
     <React.Fragment>
       <Box
@@ -62,25 +62,39 @@ const LaunchPadServices = () => {
         ))}
       </Box>
       {/* mobile devices */}
-      <Box
-        sx={{
-          display: { xs: "block", md: "none" },
-        }}
-      >
-        <Carousel
-          responsive={responsive}
-          infinite={true}
-          showDots={true}
-          autoPlay={true}
-          autoPlaySpeed={5000}
+      {slider ? (
+        <Box
+          sx={{
+            display: { xs: "block", md: "none" },
+          }}
+        >
+          <Carousel
+            responsive={responsive}
+            infinite={true}
+            showDots={true}
+            autoPlay={true}
+            autoPlaySpeed={5000}
+          >
+            {padservices.map((service) => (
+              <div key={service.id}>
+                <ServiceCard data={service} />
+              </div>
+            ))}
+          </Carousel>
+        </Box>
+      ) : (
+        <Box
+          sx={{
+            display: { xs: "block", md: "none" },
+          }}
         >
           {padservices.map((service) => (
             <div key={service.id}>
               <ServiceCard data={service} />
             </div>
           ))}
-        </Carousel>
-      </Box>
+        </Box>
+      )}
     </React.Fragment>
   );
 };

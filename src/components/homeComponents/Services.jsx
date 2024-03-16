@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Typography, CardMedia, Grid, Chip } from "@mui/material";
 
-const Services = ({ service }) => {
+const Services = ({ service, button }) => {
   return (
     <Box
       sx={{
@@ -10,7 +10,8 @@ const Services = ({ service }) => {
         height: "650px",
         border: "1px solid #5c5c5c",
         borderRadius: "40px",
-        margin: "0 auto", textAlign: "center"
+        margin: "0 auto",
+        textAlign: "center",
       }}
     >
       <Box
@@ -73,20 +74,22 @@ const Services = ({ service }) => {
               >
                 {service.description}
               </Typography>
-              <Button
-                variant="outlined"
-                tabIndex={-1}
-                startIcon={
-                  <CardMedia
-                    component="img"
-                    image="/icons/rocket.png"
-                    sx={{ width: 24, height: 24 }}
-                    alt="icon"
-                  />
-                }
-              >
-                <Typography variant="body2">Explore our station</Typography>
-              </Button>
+              {button && (
+                <Button
+                  variant="outlined"
+                  tabIndex={-1}
+                  startIcon={
+                    <CardMedia
+                      component="img"
+                      image="/icons/rocket.png"
+                      sx={{ width: 24, height: 24 }}
+                      alt="icon"
+                    />
+                  }
+                >
+                  <Typography variant="body2">Explore our station</Typography>
+                </Button>
+              )}
             </Box>
           </Grid>
           <Grid>

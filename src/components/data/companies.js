@@ -19,9 +19,4 @@ export const companies = [
     name: "AestroLaunch",
     logo: "/icons/Mars.png",
   },
-  {
-    id: 5,
-    name: "AestroLaunch",
-    logo: "/icons/Mars.png",
-  },
 ];

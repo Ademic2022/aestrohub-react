@@ -18,21 +18,9 @@ const Products = () => {
           fontSize: "18px",
           fontFamily: "Outfit",
           color: "#FF006E",
-          padding: "5px",
+          padding: "5px 10px",
           mb: "20px",
         }}
-        icon={
-          <CardMedia
-            component="img"
-            image="/icons/Saturn.png"
-            sx={{
-              width: 24,
-              height: 24,
-              objectFit: "contain",
-            }}
-            alt="icon"
-          />
-        }
         label="Our Products"
       />
       {products.map((product) => (

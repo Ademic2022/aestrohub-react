@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, CardMedia, Button } from "@mui/material";
 
-const Section7 = () => {
+const Section7 = ({ title }) => {
   return (
     <React.Fragment>
       <Box
@@ -43,7 +43,7 @@ const Section7 = () => {
             width={{ xs: "100%", md: "60%" }}
             sx={{ fontSize: { xs: 22, md: 44 } }}
           >
-            .... Made by you, delivered by us ....
+            {title ? title : ".... Made by you, delivered by us ...."}
           </Typography>
           <CardMedia
             component="img"
@@ -60,7 +60,7 @@ const Section7 = () => {
       <Button
         variant="outlined"
         tabIndex={-1}
-        sx={{mb:5}}
+        sx={{ mb: 5 }}
         startIcon={
           <CardMedia
             component="img"

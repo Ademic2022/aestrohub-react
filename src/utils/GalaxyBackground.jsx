@@ -41,27 +41,6 @@ const GalaxyBackground = () => {
     );
     scene.add(particlesMesh);
 
-    // Load planet textures and create planets
-    const textureLoader = new THREE.TextureLoader();
-    const planetTextures = [
-      "icons/Mars.png",
-      "icons/Jupiter.png",
-      "icons/ellipse.png",
-    ].map((texture) => textureLoader.load(texture));
-
-    planetTextures.forEach((texture, index) => {
-      const geometry = new THREE.SphereGeometry(0.2, 16, 16); // Adjust size and detail as needed
-      const material = new THREE.MeshBasicMaterial({ map: texture });
-      const planet = new THREE.Mesh(geometry, material);
-
-      // Position the planets differently so they're not all at the same spot
-      planet.position.x = (index - 1.5) * 3; // This spreads the planets out along the x-axis
-      planet.position.y = Math.cos(index) * 2.5; // A little vertical displacement based on index
-      planet.position.z = -6 - index; // Ensures planets are placed at different depths
-
-      scene.add(planet);
-    });
-
     camera.position.z = 2.5;
 
     // Animation loop
@@ -97,7 +76,7 @@ const GalaxyBackground = () => {
         top: 0,
         left: 0,
         width: "100%",
-        height:"100%",
+        height: "100%",
       }}
     />
   );

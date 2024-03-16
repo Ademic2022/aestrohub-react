@@ -18,21 +18,9 @@ const Services = () => {
           fontSize: "18px",
           fontFamily: "Outfit",
           color: "#0EAD69",
-          padding: "5px",
+          padding: "5px 10px",
           mb: "20px",
         }}
-        icon={
-          <CardMedia
-            component="img"
-            image="/icons/Saturn.png"
-            sx={{
-              width: 24,
-              height: 24,
-              objectFit: "contain",
-            }}
-            alt="icon"
-          />
-        }
         label="What we do"
       />
       {services.map((service) => (

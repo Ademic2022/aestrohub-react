@@ -25,7 +25,6 @@ const PageSection = ({ sectionDetails }) => {
           variant="body1"
           sx={{
             px: { md: "90px" },
-            textAlign: "justify",
             fontSize: { xs: "18px", md: "22px" },
           }}
         >
@@ -68,6 +67,7 @@ const PageSection = ({ sectionDetails }) => {
           sx={{
             my: 5,
             objectFit: "cover",
+            transform: config.img.transform ? config.img.transform : "",
           }}
         />
       </Box>

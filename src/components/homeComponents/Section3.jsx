@@ -58,7 +58,7 @@ const Section3 = () => {
         }}
       >
         {services.map((service, index) => (
-          <Services key={index} service={service} />
+          <Services button key={index} service={service} />
         ))}
       </Box>
       {/* mobile devices */}

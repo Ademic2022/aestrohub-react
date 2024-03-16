@@ -39,21 +39,9 @@ const Socials = () => {
           fontSize: "18px",
           fontFamily: "Outfit",
           color: "#3772FF",
-          padding: "5px",
+          padding: "5px 10px",
           mb: "20px",
         }}
-        icon={
-          <CardMedia
-            component="img"
-            image="/icons/Saturn.png"
-            sx={{
-              width: 24,
-              height: 24,
-              objectFit: "contain",
-            }}
-            alt="icon"
-          />
-        }
         label="Contacts"
       />
       {contacts.map((contact) => (

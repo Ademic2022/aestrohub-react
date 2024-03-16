@@ -42,7 +42,7 @@ export const whyUs = [
     id: 3,
     title: "Workforce",
     img: "/icons/sphere.png",
-    desc: "With our variety of professionals with different skills, we reduce the cost of hiring individual talents by bringing single and multiple hands to your project",
+    desc: "With our variety of professionals with different skills, we reduce the cost of hiring individual talents by bringing single and multiple hands to your project.",
   },
 ];
 
@@ -70,7 +70,7 @@ export const products = [
 export const team = [
   {
     id: 1,
-    title: "Triple A",
+    title: "Tripple A",
     img: "/avatars/male.jpeg",
     desc: "Meet our visionary founder, who is leading the charge in revolutionizing the web3 landscape. With a deep passion for blockchain technology and a relentless drive for innovation, he is dedicated to shaping the process of building both physical and digital products.",
   },
