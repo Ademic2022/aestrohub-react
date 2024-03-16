@@ -13,10 +13,12 @@ import {
   NotFound,
 } from "./pages";
 import Footer from "./components/common/Footer";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   return (
     <React.Fragment>
+      <ScrollToTop />
       <GalaxyBackground />
       <ResponsiveNavBar />
       <Container component="main" maxWidth="xl" sx={{ p: 3 }}>
