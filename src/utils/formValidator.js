@@ -27,7 +27,7 @@ export const confirmPasswordValidator = {
 export const nameValidator = {
   required: "Please enter your name",
   pattern: {
-    value: /^[a-zA-Z]+$/,
+    value: /^[a-zA-Z\s]+$/,
     message: "Please enter a valid name",
   },
   minLength: {
