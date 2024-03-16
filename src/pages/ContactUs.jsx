@@ -57,7 +57,6 @@ const ContactUs = () => {
             variant="body1"
             sx={{
               px: { md: "90px" },
-              textAlign: "left",
               fontSize: { xs: "18px", md: "22px" },
             }}
           >
