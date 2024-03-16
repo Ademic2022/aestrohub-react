@@ -87,7 +87,8 @@ const Section4 = () => {
                 <Typography
                   mb={3}
                   variant="body2"
-                  textAlign="justify"
+                  textAlign="left"
+                  lineHeight={1.2}
                   sx={{
                     fontSize: { xs: "16px", md: "22px" },
                     fontWeight: 400,
@@ -159,7 +160,8 @@ const Section4 = () => {
                 <Typography
                   mb={3}
                   variant="body2"
-                  textAlign="justify"
+                  textAlign="left"
+                  lineHeight={1.2}
                   sx={{
                     fontSize: { xs: "16px", md: "22px" },
                     fontWeight: 400,

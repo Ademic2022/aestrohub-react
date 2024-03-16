@@ -55,7 +55,7 @@ const ServiceCard = ({ data }) => {
           <Typography
             mb={3}
             variant="body2"
-            textAlign="justify"
+            textAlign="left"
             sx={{
               fontSize: "16px",
               fontWeight: 400,
