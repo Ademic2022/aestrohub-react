@@ -3,7 +3,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MuiAccordion from "@mui/material/Accordion";
 import { styled } from "@mui/material/styles";
 import { alpha } from "@mui/system";
-import { FAQs } from "../data/aboutUs";
+import { FAQs } from "../../data/aboutUs";
 import {
   Box,
   //   Accordion,

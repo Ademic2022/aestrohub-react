@@ -4,9 +4,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { alpha } from "@mui/system";
 import { Link, useLocation } from "react-router-dom";
-import { navItems } from "../data/navlinks";
+import { navItems } from "../../data/navlinks";
 import NavTracker from "../../utils/NavTracker";
-import { listVariants, itemVariants } from "../data/motionProps/navbar";
+import { listVariants, itemVariants } from "../../data/motionProps/navbar";
 import {
   AppBar,
   Container,

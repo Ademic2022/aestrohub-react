@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Chip, CardMedia } from "@mui/material";
 import Card from "../common/Card";
-import { whyUs } from "../data/aboutUs";
+import { whyUs } from "../../data/aboutUs";
 
 const WhyUs = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, CardMedia } from "@mui/material";
-import { companies } from "../data/companies";
+import { companies } from "../../data/companies";
 import Marquee from "react-marquee-slider";
 
 const Section2 = () => {
