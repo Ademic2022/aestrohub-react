@@ -76,7 +76,7 @@ const Section3 = () => {
         >
           {services.map((service) => (
             <div key={service.id}>
-              <ServiceCard data={service} />
+              <ServiceCard button data={service} />
             </div>
           ))}
         </Carousel>

@@ -8,7 +8,7 @@ import {
   Button,
 } from "@mui/material";
 
-const ServiceCard = ({ data }) => {
+const ServiceCard = ({ data, button }) => {
   return (
     <Card
       sx={{
@@ -63,6 +63,22 @@ const ServiceCard = ({ data }) => {
           >
             {data.description}
           </Typography>
+          {button && (
+            <Button
+              variant="outlined"
+              tabIndex={-1}
+              startIcon={
+                <CardMedia
+                  component="img"
+                  image="/icons/rocket.png"
+                  sx={{ width: 24, height: 24 }}
+                  alt="icon"
+                />
+              }
+            >
+              <Typography variant="body2">{data.btnText}</Typography>
+            </Button>
+          )}
         </Box>
       </CardContent>
     </Card>
