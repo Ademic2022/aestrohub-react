@@ -90,3 +90,15 @@ export const articles = [
     img: "/images/image8.jpeg",
   },
 ];
+
+export const prevProps = {
+  sectionHeader: "Previous Articles",
+  label: "AestroBlog",
+  color: "#FF006E",
+};
+
+export const featProps = {
+  sectionHeader: "Featured Articles",
+  label: "Aestro Products",
+  color: "#0EAD69",
+};

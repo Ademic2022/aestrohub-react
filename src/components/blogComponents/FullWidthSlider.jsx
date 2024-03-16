@@ -18,9 +18,7 @@ const FullWidthSlider = () => {
     <React.Fragment>
       <Box
         width={{ xs: "100%", md: "65%" }}
-        mt={15}
         sx={{ margin: "100px auto 5px", textAlign: "center" }}
-        mb={5}
       >
         <Chip
           sx={{
