@@ -30,7 +30,11 @@ const PageSection = ({ sectionDetails, button }) => {
         >
           {subtitle}
         </Typography>
-        {button && <CustomButton icon="/icons/rocket.png" btnText={btnText} />}
+        {button && (
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <CustomButton icon="/icons/rocket.png" btnText={btnText} />
+          </Box>
+        )}
       </Box>
 
       <Box
