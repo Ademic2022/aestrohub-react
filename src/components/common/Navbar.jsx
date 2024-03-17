@@ -147,33 +147,39 @@ const ResponsiveNavBar = (props) => {
               height: "48px",
             }}
           >
-            <Box sx={{ display: { xs: "none", sm: "block" }, px: 1 }}>
+            <Box sx={{ display: { xs: "none", sm: "flex" }, px: 1 }}>
               {navItems.map((item) => {
                 const cleanedItem = item
                   .trim()
                   .toLowerCase()
                   .replace(/\s+/g, "-");
                 return (
-                  <Button
-                    key={cleanedItem}
-                    component={Link}
-                    to={`/${cleanedItem}`}
-                    sx={{
-                      color: "#fff",
-                      bgcolor:
-                        activeButton === cleanedItem
-                          ? alpha("#6f6f6f", 0.4)
-                          : "",
-                      px: 3,
-                      textTransform: "capitalize",
-                    }}
+                  <Box
+                    component={motion.div}
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 10 }}
                   >
-                    <NavTracker
-                      activeButton={activeButton}
-                      cleanedItem={cleanedItem}
-                    />
-                    {item}
-                  </Button>
+                    <Button
+                      key={cleanedItem}
+                      component={Link}
+                      to={`/${cleanedItem}`}
+                      sx={{
+                        color: "#fff",
+                        bgcolor:
+                          activeButton === cleanedItem
+                            ? alpha("#6f6f6f", 0.4)
+                            : "",
+                        px: 3,
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      <NavTracker
+                        activeButton={activeButton}
+                        cleanedItem={cleanedItem}
+                      />
+                      {item}
+                    </Button>
+                  </Box>
                 );
               })}
             </Box>

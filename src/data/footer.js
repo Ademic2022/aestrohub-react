@@ -48,27 +48,26 @@ export const contacts = [
   {
     id: 1,
     social: "Email",
-    link: "",
+    link: "aestroservices@gmail.com",
   },
   {
     id: 2,
     social: "Discord",
-    link: "",
+    link: "https://discord.com/invite/uxAswgmDuH",
   },
   {
     id: 3,
     social: "LinkedIn",
-    link: "",
-    icon: "",
+    link: "https://www.linkedin.com/company/aestrohub",
   },
   {
     id: 4,
     social: "Telegram",
-    link: "",
+    link: "https://t.me/aestroservices",
   },
   {
     id: 5,
     social: "Twitter",
-    link: "",
+    link: "https://twitter.com/AestroHub",
   },
 ];
