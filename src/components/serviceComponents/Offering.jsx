@@ -119,7 +119,12 @@ const Offering = () => {
                     Full take-over of the talents to work on your project
                   </Box>
                 </Box>
-                <CustomButton btnText="Hire a Professional" to="/contact-us" />
+                <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
+                  <CustomButton
+                    btnText="Hire a Professional"
+                    to="/contact-us"
+                  />
+                </Box>
               </Box>
             </Box>
           </Grid>
@@ -202,7 +207,9 @@ const Offering = () => {
                     Handling the full aspect of your projects
                   </Box>
                 </Box>
-                <CustomButton btnText="Hire the team" to="/contact-us" />
+                <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
+                  <CustomButton btnText="Hire the team" to="/contact-us" />
+                </Box>
               </Box>
             </Box>
           </Grid>

@@ -32,7 +32,7 @@ const PageSection = ({ sectionDetails, button }) => {
         </Typography>
         {button && (
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <CustomButton icon="/icons/rocket.png" btnText={btnText} />
+            <CustomButton btnText={btnText} />
           </Box>
         )}
       </Box>
