@@ -7,6 +7,7 @@ import {
   Chip,
   Button,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ data, button }) => {
   return (
@@ -66,6 +67,8 @@ const ServiceCard = ({ data, button }) => {
           {button && (
             <Button
               variant="outlined"
+              component={Link}
+              to={`/blog/${data.id}/`}
               tabIndex={-1}
               startIcon={
                 <CardMedia

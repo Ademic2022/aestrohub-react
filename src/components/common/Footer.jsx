@@ -116,7 +116,7 @@ const Footer = () => {
               width: { xs: "300px", md: "580px" },
               pointerEvents: "none",
             }}
-            image="images/rocket.png"
+            image="/images/rocket.png"
             title="Article Image"
           />
 
@@ -129,13 +129,13 @@ const Footer = () => {
               borderRadius: "16px",
               mt: 25,
             }}
-            image="images/logo.png"
+            image="/images/logo.png"
             title="Article Image"
           />
 
           <CardMedia
             sx={{ height: "318px", borderRadius: "16px", mt: 25 }}
-            image="images/Smoke.png"
+            image="/images/Smoke.png"
             title="Article Image"
           />
         </Box>

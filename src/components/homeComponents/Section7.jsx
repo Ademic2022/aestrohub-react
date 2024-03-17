@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography, CardMedia, Button } from "@mui/material";
+import { Box, Typography, CardMedia } from "@mui/material";
+import CustomButton from "../common/CustomButton";
 
 const Section7 = ({ title, bgcolor, bottomText }) => {
   return (
@@ -29,7 +30,7 @@ const Section7 = ({ title, bgcolor, bottomText }) => {
         >
           <CardMedia
             component="img"
-            image="icons/Mars.png"
+            image="/icons/Mars.png"
             alt="Logo"
             sx={{
               display: { xs: "none", md: "block" },
@@ -47,7 +48,7 @@ const Section7 = ({ title, bgcolor, bottomText }) => {
           </Typography>
           <CardMedia
             component="img"
-            image="icons/Saturn.png"
+            image="/icons/Saturn.png"
             alt="Logo"
             sx={{
               display: { xs: "none", md: "block" },
@@ -70,21 +71,12 @@ const Section7 = ({ title, bgcolor, bottomText }) => {
           </Typography>
         </Box>
       )}
-      <Button
-        variant="outlined"
-        tabIndex={-1}
-        sx={{ mb: 5 }}
-        startIcon={
-          <CardMedia
-            component="img"
-            image="/icons/rocket.png"
-            sx={{ width: 24, height: 24 }}
-            alt="icon"
-          />
-        }
+      <Box
+        mb={1}
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
-        <Typography variant="body2">Explore our station</Typography>
-      </Button>
+        <CustomButton btnText="Explore our station" />
+      </Box>
     </React.Fragment>
   );
 };

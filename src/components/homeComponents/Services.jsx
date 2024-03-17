@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Button, Typography, CardMedia, Grid, Chip } from "@mui/material";
+import { Box, Typography, CardMedia, Grid, Chip } from "@mui/material";
+import CustomButton from "../common/CustomButton";
 
 const Services = ({ service, button }) => {
   return (
@@ -75,20 +76,7 @@ const Services = ({ service, button }) => {
                 {service.description}
               </Typography>
               {button && (
-                <Button
-                  variant="outlined"
-                  tabIndex={-1}
-                  startIcon={
-                    <CardMedia
-                      component="img"
-                      image="/icons/rocket.png"
-                      sx={{ width: 24, height: 24 }}
-                      alt="icon"
-                    />
-                  }
-                >
-                  <Typography variant="body2">{service.btnText}</Typography>
-                </Button>
+                <CustomButton btnText={service.btnText} to="/contact-us" />
               )}
             </Box>
           </Grid>

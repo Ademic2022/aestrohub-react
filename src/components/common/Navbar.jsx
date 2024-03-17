@@ -36,8 +36,14 @@ const ResponsiveNavBar = (props) => {
   };
 
   useEffect(() => {
-    const cleanedLocation = location.pathname.replace("/", "");
-    setActiveButton(cleanedLocation);
+    const pathname = location.pathname;
+    const cleanedLocation = pathname.replace("/", "");
+
+    // Check if the pathname includes "/blog"
+    const isBlogPage = pathname.includes("/blog");
+
+    // If it's a blog page, set the activeButton to "blog"
+    setActiveButton(isBlogPage ? "blog" : cleanedLocation);
   }, [location]);
 
   const drawer = (

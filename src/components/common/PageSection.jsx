@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography, CardMedia, Button } from "@mui/material";
+import { Box, Typography, CardMedia } from "@mui/material";
+import CustomButton from "./CustomButton";
 
 const PageSection = ({ sectionDetails, button }) => {
   const { title, subtitle, btnText, img, config } = sectionDetails;
@@ -29,22 +30,7 @@ const PageSection = ({ sectionDetails, button }) => {
         >
           {subtitle}
         </Typography>
-        {button && (
-          <Button
-            variant="outlined"
-            tabIndex={-1}
-            startIcon={
-              <CardMedia
-                component="img"
-                image="/icons/rocket.png"
-                sx={{ width: 24, height: 24 }}
-                alt="icon"
-              />
-            }
-          >
-            <Typography variant="body2">{btnText}</Typography>
-          </Button>
-        )}
+        {button && <CustomButton icon="/icons/rocket.png" btnText={btnText} />}
       </Box>
 
       <Box

@@ -13,9 +13,10 @@ import { alpha } from "@mui/system";
 import { FaUserTie } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
+import { Link } from "react-router-dom";
 import { responsive } from "../../data/CarouselResponsive";
 
-const ArticleSlider = ({articles, props}) => {
+const ArticleSlider = ({ articles, props }) => {
   return (
     <React.Fragment>
       <Box
@@ -146,6 +147,8 @@ const ArticleSlider = ({articles, props}) => {
                 <CardActions>
                   <Button
                     variant="filled"
+                    component={Link}
+                    to={`/blog/${article.id}/`}
                     sx={{
                       bgcolor: "#0EAD69",
                       borderRadius: "16px",

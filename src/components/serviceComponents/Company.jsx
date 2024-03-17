@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, CardMedia, Button } from "@mui/material";
 import Marquee from "react-marquee-slider";
 import { companies } from "../../data/companies";
+import CustomButton from "../common/CustomButton";
 
 const Company = () => {
   return (
@@ -97,21 +98,16 @@ const Company = () => {
           ))}
         </Box>
       </Box>
-      <Button
-        variant="outlined"
-        sx={{ my: 5 }}
-        tabIndex={-1}
-        startIcon={
-          <CardMedia
-            component="img"
-            image="/icons/rocket.png"
-            sx={{ width: 24, height: 24 }}
-            alt="icon"
-          />
-        }
+      <Box
+        sx={{
+          my: 5,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
-        <Typography variant="body2">Explore our Station</Typography>
-      </Button>
+        <CustomButton btnText="Explore our Station" />
+      </Box>
     </React.Fragment>
   );
 };

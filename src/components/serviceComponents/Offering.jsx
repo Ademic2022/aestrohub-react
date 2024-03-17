@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  CardMedia,
-  List,
-  ListItem,
-  ListItemText,
-  Chip,
-  Grid,
-  Button,
-} from "@mui/material";
+import { Box, Typography, CardMedia, Chip, Grid } from "@mui/material";
+import CustomButton from "../common/CustomButton";
 
 const Offering = () => {
   return (
@@ -128,21 +119,7 @@ const Offering = () => {
                     Full take-over of the talents to work on your project
                   </Box>
                 </Box>
-
-                <Button
-                  variant="outlined"
-                  tabIndex={-1}
-                  startIcon={
-                    <CardMedia
-                      component="img"
-                      image="/icons/rocket.png"
-                      sx={{ width: 24, height: 24 }}
-                      alt="icon"
-                    />
-                  }
-                >
-                  <Typography variant="body2">Hire a Professional</Typography>
-                </Button>
+                <CustomButton btnText="Hire a Professional" to="/contact-us" />
               </Box>
             </Box>
           </Grid>
@@ -225,20 +202,7 @@ const Offering = () => {
                     Handling the full aspect of your projects
                   </Box>
                 </Box>
-                <Button
-                  variant="outlined"
-                  tabIndex={-1}
-                  startIcon={
-                    <CardMedia
-                      component="img"
-                      image="/icons/rocket.png"
-                      sx={{ width: 24, height: 24 }}
-                      alt="icon"
-                    />
-                  }
-                >
-                  <Typography variant="body2">Hire the team</Typography>
-                </Button>
+                <CustomButton btnText="Hire the team" to="/contact-us" />
               </Box>
             </Box>
           </Grid>

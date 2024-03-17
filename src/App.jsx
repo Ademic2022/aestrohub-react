@@ -22,7 +22,7 @@ const App = () => {
       <ScrollToTop />
       <GalaxyBackground />
       <ResponsiveNavBar />
-      <Container component="main" maxWidth="xl" sx={{ p: 3 }}>
+      <Container component="main" maxWidth="xl" sx={{mb:2, p: 3 }}>
         <Box
           className="content"
           style={{ color: "#fff", marginTop: "80px", overflow: "hidden" }}

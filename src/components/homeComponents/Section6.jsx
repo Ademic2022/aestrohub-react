@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { alpha } from "@mui/system";
 import { FaUserTie } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import { articles } from "../../data/articles";
@@ -147,6 +148,8 @@ const Section6 = () => {
                 <CardActions>
                   <Button
                     variant="filled"
+                    component={Link}
+                    to={`/blog/${article.id}/`}
                     sx={{
                       bgcolor: "#0EAD69",
                       borderRadius: "16px",
