@@ -8,12 +8,51 @@ import {
   Button,
   CardMedia,
 } from "@mui/material";
-
+import { useForm } from "react-hook-form";
+import axios from "axios";
 import Services from "./footerComponents/Services";
 import Products from "./footerComponents/Products";
 import Socials from "./footerComponents/Socials";
+import { emailValidator } from "../../utils/formValidator";
 
 const Footer = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = async (input) => {
+    const API_KEY = "5135cb19347a946c5f22e5039ae32050-us18";
+    const SERVER_PREFIX = "us18";
+    const LIST_ID = "3e587b2d30";
+
+    const url = `https://${SERVER_PREFIX}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
+    const options = {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Basic ${btoa(`apikey:${API_KEY}`)}`,
+      },
+    };
+    const userData = {
+      email_address: input.email,
+      status: "subscribed", // Set the status to 'subscribed' to add the user to the list
+    };
+
+    try {
+      const response = await axios.post(url, userData, options);
+      console.log("Successfully subscribed:", response.data);
+      // Handle success (e.g., show a success message)
+      reset();
+    } catch (error) {
+      console.error(
+        "Subscription failed:",
+        error.response ? error.response.data : error.message
+      );
+      // Handle error (e.g., show an error message)
+    }
+  };
   return (
     <React.Fragment>
       <Container maxWidth="xl" sx={{ p: 3 }}>
@@ -77,6 +116,8 @@ const Footer = () => {
                 </Grid>
                 <Grid
                   item
+                  component="form"
+                  onSubmit={handleSubmit(onSubmit)}
                   xs={12}
                   md={6}
                   container
@@ -91,6 +132,9 @@ const Footer = () => {
                       border: "1px solid #5c5c5c",
                       borderRadius: "16px",
                     }}
+                    {...register("email", emailValidator)}
+                    error={!!errors.email}
+                    helperText={!!errors.email ? errors.email.message : ""}
                     id="outlined-basic"
                     label="Email"
                     variant="outlined"
@@ -98,6 +142,7 @@ const Footer = () => {
                   <Button
                     variant="contained"
                     size="large"
+                    type="submit"
                     sx={{ borderRadius: "16px" }}
                   >
                     Subscribe
